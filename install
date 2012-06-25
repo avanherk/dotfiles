@@ -1,4 +1,4 @@
 #!/bin/sh
 
 #create link for the tmux config file
-ln -s tmux.conf ~/.tmux.conf
+ln -s .tmux.conf ~/.tmux.conf
