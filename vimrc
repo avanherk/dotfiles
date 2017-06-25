@@ -177,8 +177,13 @@ if has("gui_running")
   "set guifont=Source\ Code\ Pro\ for\ Powerline:h16
 endif
 
-" Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\ ,eol:¬
+if has("mac")
+	set listchars=tab:▸\ ,eol:¬
+elseif has("unix")
+	set listchars=tab:▸\ ,eol:¬
+elseif has("win32")
+
+endif
 hi NonText ctermfg=7 guifg=gray
 
 set encoding=utf8
